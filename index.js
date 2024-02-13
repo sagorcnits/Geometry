@@ -54,3 +54,12 @@ function ellipse() {
   const result = 3.15 * majorRadious * minorRadious;
   console.log(result);
 }
+
+// hover js
+const card = document.querySelectorAll(".card");
+
+for (let cardItem of card) {
+  cardItem.addEventListener("mouseover", function () {
+    cardItem.style.backgroundColor = "red";
+  });
+}

@@ -41,7 +41,7 @@
     </header>
     <!-- main section start  -->
     <main>
-      <div class="flex gap-5 w-11/12 mx-auto mt-8">
+      <div class="flex flex-col-reverse md:flex-row gap-5 w-11/12 mx-auto mt-8">
         <div
           class="grid md:grid-cols-2 lg:grid-cols-3 gap-5 *:card-compact *:bg-base-100 *:shadow-md *:border *:border-solid *:border-gray-200 *:rounded-lg *:py-2 *:px-2"
         >
@@ -52,7 +52,7 @@
             <div class="card-body text-center">
               <h2 class="text-2xl font-bold">Triangle</h2>
               <p class="text-xl">Area (A) = 0.5 b x h</p>
-              <div class="flex items-center">
+              <div class="flex items-center mx-auto">
                 <input
                   class="w-24 text-xl rounded-md py-2 bg-slate-200 text-center"
                   type="text"
@@ -86,7 +86,7 @@
             <div class="card-body text-center">
               <h2 class="text-2xl font-bold">Rectangle</h2>
               <p class="text-xl">Area (A) = w x I</p>
-              <div class="flex items-center">
+              <div class="flex items-center mx-auto">
                 <input
                   class="w-24 text-xl rounded-md py-2 bg-slate-200 text-center"
                   type="text"
@@ -120,7 +120,7 @@
             <div class="card-body text-center">
               <h2 class="text-2xl font-bold">Parallelogram</h2>
               <p class="text-xl">Area (A) = b x h</p>
-              <div class="flex items-center">
+              <div class="flex items-center mx-auto">
                 <input
                   class="w-24 text-xl rounded-md py-2 bg-slate-200 text-center"
                   type="text"
@@ -154,7 +154,7 @@
             <div class="card-body text-center">
               <h2 class="text-2xl font-bold">Rhombus</h2>
               <p class="text-xl">Area (A) = 0.5 d1 x d2</p>
-              <div class="flex items-center">
+              <div class="flex items-center mx-auto">
                 <input
                   class="w-24 text-xl rounded-md py-2 bg-slate-200 text-center"
                   type="text"
@@ -188,7 +188,7 @@
             <div class="card-body text-center">
               <h2 class="text-2xl font-bold">Pentagon</h2>
               <p class="text-xl">Area (A) = 0.5 p x b</p>
-              <div class="flex items-center">
+              <div class="flex items-center mx-auto">
                 <input
                   class="w-24 text-xl rounded-md py-2 bg-slate-200 text-center"
                   type="text"
@@ -222,14 +222,14 @@
             <div class="card-body text-center">
               <h2 class="text-2xl font-bold">Ellipse</h2>
               <p class="text-xl">Area (A) = ab</p>
-              <div class="flex items-center">
+              <div class="flex items-center mx-auto">
                 <input
                   class="w-24 text-xl rounded-md py-2 bg-slate-200 text-center"
                   type="text"
                   id="ellipse-axis"
                   placeholder="a"
                 />
-                <span class="mr-4 ml-2">cm</span>
+                <span class="mr- ml-2">cm</span>
                 <input
                   class="w-24 text-xl rounded-md py-2 bg-slate-200 text-center"
                   type="text"
@@ -250,11 +250,9 @@
           </div>
         </div>
         <div
-          class="w-[25%] border border-solid border-gray-200 rounded-lg text-center"
+          class="lg:w-96 py-8 border border-solid border-gray-200 rounded-lg text-center"
         >
-          <h1
-            class="text-2xl font-bold text-gray-500 inline-block underline mt-4"
-          >
+          <h1 class="text-2xl font-bold text-gray-500 inline-block underline">
             Area Calculation
           </h1>
         </div>
