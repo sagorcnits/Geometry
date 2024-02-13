@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Geometry</title>
+    <!-- daisy ui design  -->
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.7.0/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <header>
+      <nav
+        class="w-11/12 mx-auto bg-sky-200 px-8 flex justify-between py-4 items-center mt-8 rounded-md shadow-md"
+      >
+        <div>
+          <h1 class="text-2xl font-bold text-gray-500">Interactive</h1>
+          <h4 class="font-bold text-gray-500">Geometry Genius</h4>
+        </div>
+        <div>
+          <button
+            class="px-[30px] rounded-lg text-white font-bold py-2 bg-[#1090D8]"
+          >
+            Blog
+          </button>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="flex gap-5 w-11/12 mx-auto mt-8">
+        <div
+          class="grid grid-cols-3 gap-5 *:card-compact *:bg-base-100 *:shadow-md *:border *:border-solid *:border-gray-200 *:rounded-lg *:py-2"
+        >
+          <div class="card">
+            <figure>
+              <img src="images/triangle.png" alt="traia" />
+            </figure>
+            <div class="card-body text-center">
+              <h2 class="text-2xl font-bold">Triangle</h2>
+              <p class="text-xl">Area (A) = 0.5 b x h</p>
+              <div class="flex items-center">
+                <input
+                  class="w-24 text-xl rounded-md py-2 bg-slate-200 text-center"
+                  type="text"
+                  id="triangle-base"
+                  placeholder="b"
+                />
+                <span class="mr-4 ml-2">cm</span>
+                <input
+                  class="w-24 text-xl rounded-md py-2 bg-slate-200 text-center"
+                  type="text"
+                  id="triangle-height"
+                  placeholder="h"
+                />
+                <span class="ml-2">cm</span>
+              </div>
+              <div class="card-actions justify-end mt-4">
+                <button class="btn btn-primary w-full text-white font-bold">
+                  Calculate
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <figure>
+              <img src="images/rectangle.png" alt="traia" />
+            </figure>
+            <div class="card-body text-center">
+              <h2 class="text-2xl font-bold">Rectangle</h2>
+              <p class="text-xl">Area (A) = w x I</p>
+              <div class="flex items-center">
+                <input
+                  class="w-24 text-xl rounded-md py-2 bg-slate-200 text-center"
+                  type="text"
+                  id="triangle-base"
+                  placeholder="w"
+                />
+                <span class="mr-4 ml-2">cm</span>
+                <input
+                  class="w-24 text-xl rounded-md py-2 bg-slate-200 text-center"
+                  type="text"
+                  id="triangle-height"
+                  placeholder="I"
+                />
+                <span class="ml-2">cm</span>
+              </div>
+              <div class="card-actions justify-end mt-4">
+                <button class="btn btn-primary w-full text-white font-bold">
+                  Calculate
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <figure>
+              <img src="images/triangle.png" alt="traia" />
+            </figure>
+            <div class="card-body text-center">
+              <h2 class="text-2xl font-bold">Parallelogram</h2>
+              <p class="text-xl">Area (A) = b x h</p>
+              <div class="flex items-center">
+                <input
+                  class="w-24 text-xl rounded-md py-2 bg-slate-200 text-center"
+                  type="text"
+                  id="triangle-base"
+                  placeholder="b"
+                />
+                <span class="mr-4 ml-2">cm</span>
+                <input
+                  class="w-24 text-xl rounded-md py-2 bg-slate-200 text-center"
+                  type="text"
+                  id="triangle-height"
+                  placeholder="h"
+                />
+                <span class="ml-2">cm</span>
+              </div>
+              <div class="card-actions justify-end mt-4">
+                <button class="btn btn-primary w-full text-white font-bold">
+                  Calculate
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <figure>
+              <img src="images/rhombus.png" alt="traia" />
+            </figure>
+            <div class="card-body text-center">
+              <h2 class="text-2xl font-bold">Rhombus</h2>
+              <p class="text-xl">Area (A) = 0.5 d1 x d2</p>
+              <div class="flex items-center">
+                <input
+                  class="w-24 text-xl rounded-md py-2 bg-slate-200 text-center"
+                  type="text"
+                  id="triangle-base"
+                  placeholder="d"
+                />
+                <span class="mr-4 ml-2">cm</span>
+                <input
+                  class="w-24 text-xl rounded-md py-2 bg-slate-200 text-center"
+                  type="text"
+                  id="triangle-height"
+                  placeholder="d"
+                />
+                <span class="ml-2">cm</span>
+              </div>
+              <div class="card-actions justify-end mt-4">
+                <button class="btn btn-primary w-full text-white font-bold">
+                  Calculate
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <figure>
+              <img src="images/pentagon.png" alt="traia" />
+            </figure>
+            <div class="card-body text-center">
+              <h2 class="text-2xl font-bold">Pentagon</h2>
+              <p class="text-xl">Area (A) = 0.5 p x b</p>
+              <div class="flex items-center">
+                <input
+                  class="w-24 text-xl rounded-md py-2 bg-slate-200 text-center"
+                  type="text"
+                  id="triangle-base"
+                  placeholder="p"
+                />
+                <span class="mr-4 ml-2">cm</span>
+                <input
+                  class="w-24 text-xl rounded-md py-2 bg-slate-200 text-center"
+                  type="text"
+                  id="triangle-height"
+                  placeholder="b"
+                />
+                <span class="ml-2">cm</span>
+              </div>
+              <div class="card-actions justify-end mt-4">
+                <button class="btn btn-primary w-full text-white font-bold">
+                  Calculate
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <figure>
+              <img src="images/ellipse.png" alt="traia" />
+            </figure>
+            <div class="card-body text-center">
+              <h2 class="text-2xl font-bold">Ellipse</h2>
+              <p class="text-xl">Area (A) = ab</p>
+              <div class="flex items-center">
+                <input
+                  class="w-24 text-xl rounded-md py-2 bg-slate-200 text-center"
+                  type="text"
+                  id="triangle-base"
+                  placeholder="a"
+                />
+                <span class="mr-4 ml-2">cm</span>
+                <input
+                  class="w-24 text-xl rounded-md py-2 bg-slate-200 text-center"
+                  type="text"
+                  id="triangle-height"
+                  placeholder="b"
+                />
+                <span class="ml-2">cm</span>
+              </div>
+              <div class="card-actions justify-end mt-4">
+                <button class="btn btn-primary w-full text-white font-bold">
+                  Calculate
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="w-[25%] border border-solid border-gray-200 rounded-lg text-center"
+        >
+          <h1
+            class="text-2xl font-bold text-gray-500 inline-block underline mt-4"
+          >
+            Area Calculation
+          </h1>
+        </div>
+      </div>
+    </main>
+    <footer class="footer mt-8 p-10 bg-neutral text-neutral-content">
+      <aside>
+        <h1 class="text-2xl font-bold">Geometry</h1>
+        <p>ACME Industries Ltd.<br />Providing reliable tech since 1992</p>
+      </aside>
+      <nav>
+        <h6 class="footer-title">Social</h6>
+      </nav>
+    </footer>
+  </body>
+</html>
