@@ -60,6 +60,13 @@ const card = document.querySelectorAll(".card");
 
 for (let cardItem of card) {
   cardItem.addEventListener("mouseover", function () {
-    cardItem.style.backgroundColor = "red";
+    const redColor = Math.floor(Math.random() * 255);
+    const greenColor = Math.floor(Math.random() * 255);
+    const blueColor = Math.floor(Math.random() * 255);
+
+    cardItem.style.backgroundColor = `rgb(${redColor}, ${greenColor}, ${blueColor})`;
+  });
+  cardItem.addEventListener("mouseout", function () {
+    cardItem.style.backgroundColor = "white";
   });
 }
