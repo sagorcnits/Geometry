@@ -12,6 +12,14 @@
       type="text/css"
     />
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- style css -->
+    <style>
+      .card-body {
+        padding: 10px 10px;
+        text-align: center;
+      }
+    </style>
   </head>
   <body>
     <header>
@@ -31,10 +39,11 @@
         </div>
       </nav>
     </header>
+    <!-- main section start  -->
     <main>
       <div class="flex gap-5 w-11/12 mx-auto mt-8">
         <div
-          class="grid grid-cols-3 gap-5 *:card-compact *:bg-base-100 *:shadow-md *:border *:border-solid *:border-gray-200 *:rounded-lg *:py-2 *:px-2"
+          class="grid md:grid-cols-2 lg:grid-cols-3 gap-5 *:card-compact *:bg-base-100 *:shadow-md *:border *:border-solid *:border-gray-200 *:rounded-lg *:py-2 *:px-2"
         >
           <div class="card">
             <figure>
@@ -60,12 +69,16 @@
                 <span class="ml-2">cm</span>
               </div>
               <div class="card-actions justify-end mt-4">
-                <button class="btn btn-primary w-full text-white font-bold">
+                <button
+                  onclick="triangle()"
+                  class="btn btn-primary w-full text-white font-bold"
+                >
                   Calculate
                 </button>
               </div>
             </div>
           </div>
+          <!-- rectangle -->
           <div class="card">
             <figure>
               <img src="images/rectangle.png" alt="traia" />
@@ -77,25 +90,29 @@
                 <input
                   class="w-24 text-xl rounded-md py-2 bg-slate-200 text-center"
                   type="text"
-                  id="triangle-base"
+                  id="rectangle-width"
                   placeholder="w"
                 />
                 <span class="mr-4 ml-2">cm</span>
                 <input
                   class="w-24 text-xl rounded-md py-2 bg-slate-200 text-center"
                   type="text"
-                  id="triangle-height"
+                  id="rectangle-height"
                   placeholder="I"
                 />
                 <span class="ml-2">cm</span>
               </div>
               <div class="card-actions justify-end mt-4">
-                <button class="btn btn-primary w-full text-white font-bold">
+                <button
+                  onclick="rectAngle()"
+                  class="btn btn-primary w-full text-white font-bold"
+                >
                   Calculate
                 </button>
               </div>
             </div>
           </div>
+          <!-- peralleogram -->
           <div class="card">
             <figure>
               <img src="images/parallelogram.png" alt="traia" />
@@ -107,25 +124,29 @@
                 <input
                   class="w-24 text-xl rounded-md py-2 bg-slate-200 text-center"
                   type="text"
-                  id="triangle-base"
+                  id="parallelogram-base"
                   placeholder="b"
                 />
                 <span class="mr-4 ml-2">cm</span>
                 <input
                   class="w-24 text-xl rounded-md py-2 bg-slate-200 text-center"
                   type="text"
-                  id="triangle-height"
+                  id="parallelogram-height"
                   placeholder="h"
                 />
                 <span class="ml-2">cm</span>
               </div>
               <div class="card-actions justify-end mt-4">
-                <button class="btn btn-primary w-full text-white font-bold">
+                <button
+                  onclick="parral()"
+                  class="btn btn-primary w-full text-white font-bold"
+                >
                   Calculate
                 </button>
               </div>
             </div>
           </div>
+          <!-- rhombos -->
           <div class="card">
             <figure>
               <img src="images/rhombus.png" alt="traia" />
@@ -137,25 +158,29 @@
                 <input
                   class="w-24 text-xl rounded-md py-2 bg-slate-200 text-center"
                   type="text"
-                  id="triangle-base"
+                  id="rombos-drio"
                   placeholder="d"
                 />
                 <span class="mr-4 ml-2">cm</span>
                 <input
                   class="w-24 text-xl rounded-md py-2 bg-slate-200 text-center"
                   type="text"
-                  id="triangle-height"
+                  id="rombos-driogonal"
                   placeholder="d"
                 />
                 <span class="ml-2">cm</span>
               </div>
               <div class="card-actions justify-end mt-4">
-                <button class="btn btn-primary w-full text-white font-bold">
+                <button
+                  onclick="rhombos()"
+                  class="btn btn-primary w-full text-white font-bold"
+                >
                   Calculate
                 </button>
               </div>
             </div>
           </div>
+          <!-- pentagon  -->
           <div class="card">
             <figure>
               <img src="images/pentagon.png" alt="traia" />
@@ -167,25 +192,29 @@
                 <input
                   class="w-24 text-xl rounded-md py-2 bg-slate-200 text-center"
                   type="text"
-                  id="triangle-base"
+                  id="pentagon-penta"
                   placeholder="p"
                 />
                 <span class="mr-4 ml-2">cm</span>
                 <input
                   class="w-24 text-xl rounded-md py-2 bg-slate-200 text-center"
                   type="text"
-                  id="triangle-height"
+                  id="pentagon-benta"
                   placeholder="b"
                 />
                 <span class="ml-2">cm</span>
               </div>
               <div class="card-actions justify-end mt-4">
-                <button class="btn btn-primary w-full text-white font-bold">
+                <button
+                  onclick="pentagon()"
+                  class="btn btn-primary w-full text-white font-bold"
+                >
                   Calculate
                 </button>
               </div>
             </div>
           </div>
+          <!-- ellipse -->
           <div class="card">
             <figure>
               <img src="images/ellipse.png" alt="traia" />
@@ -197,20 +226,23 @@
                 <input
                   class="w-24 text-xl rounded-md py-2 bg-slate-200 text-center"
                   type="text"
-                  id="triangle-base"
+                  id="ellipse-axis"
                   placeholder="a"
                 />
                 <span class="mr-4 ml-2">cm</span>
                 <input
                   class="w-24 text-xl rounded-md py-2 bg-slate-200 text-center"
                   type="text"
-                  id="triangle-height"
+                  id="ellipse-baxis"
                   placeholder="b"
                 />
                 <span class="ml-2">cm</span>
               </div>
               <div class="card-actions justify-end mt-4">
-                <button class="btn btn-primary w-full text-white font-bold">
+                <button
+                  onclick="ellipse()"
+                  class="btn btn-primary w-full text-white font-bold"
+                >
                   Calculate
                 </button>
               </div>
@@ -228,6 +260,7 @@
         </div>
       </div>
     </main>
+    <!-- footer section start -->
     <footer class="footer mt-8 p-10 bg-neutral text-neutral-content">
       <aside>
         <h1 class="text-2xl font-bold">Geometry</h1>
@@ -237,5 +270,7 @@
         <h6 class="footer-title">Social</h6>
       </nav>
     </footer>
+
+    <script src="index.js"></script>
   </body>
 </html>
